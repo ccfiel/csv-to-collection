@@ -28,7 +28,7 @@
       return _results;
     };
     this.c2c.addPublicCsvToCollection = function(collection, path) {
-      return this.addCsvStringToCollection(collection, String((Npm.require("fs")).readFileSync("../client/app/" + path)));
+      return this.addCsvStringToCollection(collection, String((Npm.require("fs")).readFileSync(path)));
     };
   }
 
